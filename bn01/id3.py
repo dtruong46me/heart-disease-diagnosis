@@ -13,8 +13,9 @@ class Node:
         self.child[value] = node
 
 def id3(data, attributes):
+    
     labels = [row[-1] for row in data]
-    print(labels,len(labels))
+    # print(labels,len(labels))
 
     if labels.count(labels[0]) == len(labels):
         return labels[0]
